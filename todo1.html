@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 함수 f(x) => y
+    // 상태가 없다
+
+    const arr = []
+
+    for (let i = 0; i < 10; i++) {
+        arr.push(function() {
+            console.log(i)
+        })
+    }
+
+    console.log(arr)
+
+    console.log("----------------------------")
+
+    for (let i = 0; i < 10; i++) {
+        arr[i]()
+    }
+
+</script>
+</body>
+</html>

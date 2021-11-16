@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 로컬 스토리지에서 읽어 오기
+    const msg = localStorage.getItem("sample")
+
+    // JSON(문자열)을 자바스크립트 객체로
+    const obj = JSON.parse(msg)
+
+    console.dir(obj)
+
+    const arrStr = localStorage.getItem("products")
+
+    const products = JSON.parse(arrStr)
+
+    for (let i = 0; i < products.length; i++) {
+        console.log(products[i])
+    }
+
+</script>
+</body>
+</html>
